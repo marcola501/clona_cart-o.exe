@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6b0000;
+}
+p {
+    color: #862020;
+    text-align: center;
+    font-size: 1.5em;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#heart {
+    font-size: 6em;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: beat 0.6s infinite;
+}
+#heart a:hover {
+    animation: beat 0.3s infinite;
+}
+#conteudo {
+    font-style: italic;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
